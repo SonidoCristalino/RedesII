@@ -3,7 +3,7 @@
 	- Sólo se aprueba la cursada. No se sabe si es parcial integrador o un examen final.
 	- En el campus hay videos explicativos de cada clase (explica un poco más, son los mismos temas porque están sacadas del
 	  mismo libro).
-	- Viernes o sábado consultas sobre los videos que
+	- Viernes o sábado consultas sobre los videos que están colgados.
 	- 9 clases que son de consulta.
 	- Lo que hay que hacer es contestar el cuestionario que va ir subiendo el profesor. Final de cada clase del Campus, hay un
 	  cuestionario, tiene una fecha de caducidad de 15 días (se puede realizar consultas entre el medio).
