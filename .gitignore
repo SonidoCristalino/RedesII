@@ -1,0 +1,5 @@
+*.log
+*.aux
+*.tex
+/Bibliografia/*
+/Escrito/Imagenes/*
