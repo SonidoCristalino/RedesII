@@ -1,8 +1,8 @@
 # ¿Qué es internet?
 Varias definiciones:
-	- Como una red de dispositivos conectados entre sí. Antes sólo se conectaban ordenadores, ahora también se conectan cualquier tipo
-	de dispositivos electrónicos, como heladeras, microondas, autos, etc. IOT (Internet de las cosas). Conexión de muchos dispositivos
-	entre si.
+	- Como una red de dispositivos conectados entre sí. Antes sólo se conectaban ordenadores, ahora también se conectan
+	  cualquier tipo de dispositivos electrónicos, como heladeras, microondas, autos, etc. IOT (Internet de las cosas).
+	  Conexión de muchos dispositivos entre si.
 
 	- Red de servicios, que se nos ofrece como una forma de participar en redes sociales, ver videos, enviar mensajes, comprar, vender.
 
@@ -17,6 +17,7 @@ Tres funciones principales:
 	- Formato
 	- Orden de los mensajes enviados y recibidos
 	- Acciones que se ejecutan sobre los mensajes.
+
 Algunos de los protocolos más conocidos de internet pueden ser: wifi, tcp/ip, FTP, HTTP, SMTP.
 Los protocolos pueden ser definidos e implementados por empresas privadas, los denominados _protocolos propietarios_ o por
 entidades de caracter público como la IEEE, ISO, ITU, etc, y lo hacen mediante los documentos RFC (donde se piden referencias o
