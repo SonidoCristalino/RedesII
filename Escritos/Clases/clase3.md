@@ -19,9 +19,9 @@ Retardos:
 - Retardo de transmisión: tamaño del paquete / velocidad del enlace.
 
 - Retardo de propagación: Distancia / velocidad (velocidad de la luz): Tiempo que necesita el bit de ir un lado al otro, la
-  velocidad es la misma, lo que cambia es la distancia y el medio.  Varía según el medio,por eso no es lo mismo 1 mega de wirless
+  velocidad es la misma, lo que cambia es la distancia y el medio.  Varía según el medio,por eso no es lo mismo 1 mega de Wireless
   que en fibra. Ya que el de wirless al tener mayor ruido el ambiente, tiene más espacio de cabecera para recuperar los datos
-  dañados, a diferencia con el mega de firba que el tamaño de la cabecera es más chica y tiene mayor espacio para la cantidad de
+  dañados, a diferencia con el mega de fibra que el tamaño de la cabecera es más chica y tiene mayor espacio para la cantidad de
   datos.
   Se tiene más errores en wirleess, que en fibra (ya que los campos electromagnéticos no interfieren). La velocidad por
   eso es más alta, en TCP, en cobre hay mucha interferencia y por eso hay un checksum, en esta tiene que mayor cantidad de
@@ -46,10 +46,10 @@ Por qué se desarrolla en capas los protocolos:
 Encapsulamiento:
 ----------------
 Encabezados que le va agregando cada capa para ser usado cuando llega del otro lado por la misma capa.
-Capa de Enlace: le pone la mac de destino y la mac de origen. Dirección física, es única por cada interfaz, está dado por
+Capa de Enlace: le pone la mac de destino y la MAC de origen. Dirección física, es única por cada interfaz, está dado por
 el fabricante.
 Por ejemplo:
-	- Capa de Red: Le pone la dirección IP de origin y destino. Identifica host
+	- Capa de Red: Le pone la dirección IP de origen y destino. Identifica host
 	- Capa de Transporte: se le indican los puertos. Se identifica el programa, puerto 21 para https.
 
 Protocolo TCP:
@@ -57,7 +57,7 @@ Protocolo TCP:
 TCP: Realiza el mejor esfuerzo para mandar el paquete. Pero este no tiene calidad de servicio, ya que al pasar por distintos
 proveedores, cada proveedor tendrá según sus propósitos, distintos privilegios dependiendo del tipo de paquetes. Es por ello que
 se dice que que no se hace responsable en la calidad de cada uno de los paquetes que recibe.
-Con IPV6 antes de enviar el paquete, se envia un ICMP para saber el tamaño en que tiene que fragmentar desde el enviar, y con esto
+Con IPV6 antes de enviar el paquete, se envía un ICMP para saber el tamaño en que tiene que fragmentar desde el enviar, y con esto
 se evita de antemano que haya retrasos cuando hay mucho tráfico en la red.
 En IPV4 la fragmentación de paquetes se va realizando a medida que se envían los paquetes, por lo que es más complicado de
 prevenir el tráfico de mensajes desde un principio como hace IPV6.
