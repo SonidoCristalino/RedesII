@@ -272,4 +272,3 @@ ese router se comunica con toda la Red mediante ethernet.
 Por lo tanto los mensajes en internet viajan por los distintos nodos que se irán encargando de mirar las distintas cabeceras para
 poder encapsular y desencapsular nuevamente y redirigir así las tramas para llegar al destinatario final.
 
-
