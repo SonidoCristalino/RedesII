@@ -279,7 +279,7 @@ El uso de las cookies en los servidores es muy variada:
 	- Mantener carrito de la compra.
 	- Ayudan a la personalización del sitio, almacenando como el color, idioma o tamaño de letra favorito.
 
-Privacidad:
+[Privacidad](Privacidad):
 	- Se puede conocer información personal: nombre, email, etc.
 	- Pueden guardar información a lo largo de internet, como por ejemplo los anuncios que se muestran.
 	- Se puede hacer un seguimiento del historial de la navegación del usuario.
