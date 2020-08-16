@@ -316,7 +316,7 @@ Bittorrent.
 Como se dijo antes, Bittorrent no utiliza un tracker centralizado sino que utiliza lo que denominamos tablas hash distribuidas, es
 decir, que son bases de datos por decirlo de alguna manera, que van a contener pares clave-valor, en nuestro caso van a contener
 el nombre del fichero y la dirección IP que tiene y así, el tracker va a poder saber que un fichero determinado, lo tiene
-tiene el ordenador 210.4.7.2. Entonces los padres van a consultar a esta base de datos distribuida consuntándole por este
+tiene el ordenador 210.4.7.2. Entonces los pares van a consultar a esta base de datos distribuida consuntándole por este
 esta clave y el valor e irá obteniendo los datos de cada torrente.
 
 ## Skype
