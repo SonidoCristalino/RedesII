@@ -25,13 +25,13 @@ ayudas a expertos para nuevas funcionalidades que se requieren.
 
 # Estructura de la red:
 	- Frontera de red: formada por dispositivos últimos como ordenadores, celulares, impresoras, etc que se conectan a la red
-	- Nucleo de la red: formado por todos dispostivios de red (routers, switches por ejemplo) que ponen a disposición las ISP
+	- Nucleo de la red: formado por todos dispositivos de red (routers, switches por ejemplo) que ponen a disposición las ISP
 	  para poder conectar todo entre sí.
 	- Redes de Acceso: son las redes que conectan los dispositivos que están en la frontera con los del nucleo (por ejemplo el
-	  cable que sale de mi casa y que hace todo el recorrido hassta llegar al ISP contratado).
+	  cable que sale de mi casa y que hace todo el recorrido hasta llegar al ISP contratado).
 
 # Frontera de red
-Está formada por sistemas terminales o host, los cuales ejecutan eplicaciones y están conectados a la red. POr ejemplo un
+Está formada por sistemas terminales o host, los cuales ejecutan aplicaciones y están conectados a la red. Por ejemplo un
 ordenador que ejecuta un navegador o un servidor que ejecuta un servidor de email. Están en los extremos de la comunicación.
 Existen dos modelos de comunicación.
 	- Cliente/servidor: donde un cliente solicita un servicio y esa petición está dirigida a una máquina que hace de proveedor
@@ -55,15 +55,17 @@ Lo hacen mediante un medio físico, por el aire o por un cable.
 		- Fibra óptica: no transporta señales eléctricas sino pulsos de luz, lo que lo hace inmune a las interferencias
 		  eléctricas. Aunque hay que tener en cuenta los ángulos de curvatura extremos.
 		  Son capaces de transmitir información a muy alta velocidad (llegando al Terabyte por segundo) a grandes
-		  distancias, lo que lo hace perfecto para enlaces transoceánicos o enlaces en el núcleo de la red.
+		  distancias, lo que lo hace perfecto para enlaces trans-oceánicos o enlaces en el núcleo de la red.
 			Existen dos tipos:
 				- monomodo: equipamiento más caro que transmite a muy altas velocidades a mucha distancia
 				- multimodo:
 		- Aire: Otro medio para transmitir datos, que al no transmitir por medios. Tiene una ventaja de menor coste, ya
 		  que no hay que tirar cable, pero hay problemas de reflexión, interferencias.
 		  Muchas tecnologías que emplean este medio como por ejemplo Wifi, Bluethoot, wimax. Las velocidades son muchos
-		  menores que con cables, y tienen el problema de las intereferencias y los errores en datos son mucho mayores.
+		  menores que con cables, y tienen el problema de las interferencias y los errores en datos son mucho mayores.
 		  Pues el medio que es el aire es compartido por todos.
+
+# Acceso a la Red:
 
 	## Acceso a la red (entre Redes hogareñas/privadas hasta ISP):
 		- Red telefónica: Fue la que se empleo al comienzo dado que ya el tendido de red ya estaba puesto. Para ello fue
@@ -85,11 +87,11 @@ Lo hacen mediante un medio físico, por el aire o por un cable.
 		  perdidas por distancia y metiendo en el mismo cable varios servicios, como telefónica, tv e internet.
 
 	## Acceso dentro de la red privada o institucional:
-		- Los host también deben conectarse dentro de la propia red a la que pertenecen y ello lo hacen conmunmente por
+		- Los host también deben conectarse dentro de la propia red a la que pertenecen y ello lo hacen comúnmente por
 		  cable Ethernet (el que tiene por extremos una ficha RJ45), llegando a alcanzar velocidades de hasta 100Gb/s
 		  entre terminales. ¡Recordar que esto es DENTRO de la red doméstica, privada o de la institución; hacia afuera de
 		  la red, hacia los IPS la velocidad varía dependiendo del servicio contratado por la institución u hogar.
-		- La otra opción es conectar los dispostivios mediante puntos de acceso, es decir, de modo inalámbrico. Por
+		- La otra opción es conectar los dispositivos mediante puntos de acceso, es decir, de modo inalámbrico. Por
 		  ejemplo con redes de wifi (6gb/s), por Wimax que alcanzan distancias más grandes, o sino Bluethoot; también por
 		  redes móviles como puede ser 3G, 4G o 5G.
 
@@ -101,7 +103,7 @@ Lo hacen mediante un medio físico, por el aire o por un cable.
 # Núcleo de Red
 Lo forma toda la infraestructura que nos proveen los servidores de internet (ISP) para conectar todas las redes entre sí. Serán
 por ejemplo todos los routers, swtiches, cableado, que transmiten los datos por la red. Son limitados y compartidos entre los
-dispositivos que quieran conectarse entre si. Dependiendo de **COMO se compartarn estos recursos** es que se tienen dos formas de
+dispositivos que quieran conectarse entre si. Dependiendo de **COMO se compartan estos recursos** es que se tienen dos formas de
 transmisión de datos a través de la red:
 
 ## Formas de compartir recursos:
@@ -109,7 +111,7 @@ transmisión de datos a través de la red:
 	  dispositivos previa a establecer la conexión. Esta conexión será terminal a terminal, y no se alterará una vez
 	  establecida dicha conexión. Cabe mencionar que estos recursos son DEDICADOS, es decir que de no utilizarse, se pierde su
 	  uso para otros usuarios. La principal ventaja es que se tienen las prestaciones garantizadas, por lo que si el tráfico
-	  sigue un patrón conocido, la comnutación será ideal.
+	  sigue un patrón conocido, la conmutación será ideal.
 	  Todo ello significa un coste de tiempo y recursos.
 	  Esto se logra mediante la multiplexación de las señales de los distintos usuarios. Se puede multiplexar en frecuencia,
 	  en tiempo, por código.
@@ -127,7 +129,7 @@ transmisión de datos a través de la red:
 	  SIN reservar los mismos. Esto permite que la Conmutación de Paquetes soporte los mismos o hasta más usuarios que la
 	  conmutación de circuitos. Cada nodo tiene una velocidad de salida por el enlace, y cada paquete debe llegar completo al
 	  siguiente conmutador antes de que este mensaje completo se vuelva a transmitir, es lo que se conoce como "Almacenamiento
-	  y reenvio" . Cada conmutador tiene distintos enlaces de salida, y en la salida de ellos se tiene un buffer o cola de
+	  y reenvío" . Cada conmutador tiene distintos enlaces de salida, y en la salida de ellos se tiene un buffer o cola de
 	  salida, donde se pueden generar esperas (llamados retardos de cola), dependiendo del estado de congestión de la red.
 	  Como los buffers tienen una capacidad de almacenamiento finito, este puede estar lleno por lo que los paquetes pueden
 	  ser desechados, y se perderá. Por lo que hay posibilidad de pérdidas de paquetes.
@@ -170,20 +172,19 @@ importantes que otras. Existe una jerarquía de niveles.
 # Retardos y perdidas de paquetes:
 Existen cuatro motivos dentro de la conmutación de paquetes por lo que se pueden retrasar los paquetes:
 
-	- Retardo de Procesamiento en el Nodo: La principal fuente de retardo es la que se produce cuando llega un paquete desde
+	- *Retardo de Procesamiento en el Nodo*: La principal fuente de retardo es la que se produce cuando llega un paquete desde
 	  un ordenador a un nodo. El nodo debe procesar ese paquete, es decir, comprobar si tiene errores y determinar por cuál
 	  enlace debe salir ese paquete. Es el denominado "Retardo de procesamiento en el nodo". Este retardo suele ser del orden
 	  de los microsegundos.
-	- Retardo de Cola: El paquete se dirige al enlace de salida (la puerta de salida del nodo) donde se encuentra que ya hay
+	- *Retardo de Cola*: El paquete se dirige al enlace de salida (la puerta de salida del nodo) donde se encuentra que ya hay
 	  un paquete del host A esperando a salir por él, por lo que tendrá que esperar, para ser transmitido. Ese tiempo de
 	  espera en la cola de salida del nodo se conoce como "retardo de cola". Es el tiempo de espera para transmitir el paquete
 	  por el enlace de salida. Y dependerá del nivel de congestión que tenga el nodo en el momento de transmitir, variando el
 	  tiempo de unos microsegundos o milisegundos si hay mucho tráfico en espera.
-
-	- Retardo de tranmisión: Es el tiempo que tarda el nodo en meter el paquete por el enlace. Este tiempo dependerá de la
+	- *Retardo de transmisión*: Es el tiempo que tarda el nodo en meter el paquete por el enlace. Este tiempo dependerá de la
 	  longitud del paquete (L) y de la capacidad del ancho de banda del enlace (R). El cual se puede calcular fácilmente
 	  realizando la división L/R. Suele ser del orden de micro o milisegundos.
-	- Retardo de propagación: Es el retardo que se produce al viajar un paquete del nodo de salida al nodo de llegada a través
+	- *Retardo de propagación*: Es el retardo que se produce al viajar un paquete del nodo de salida al nodo de llegada a través
 	  del enlace. Dependerá de este retardo de la longitud del enlace (S) y de la velocidad del medio de propagación (V),que
 	  suele ser del orden de los microsegundos, aunque a grandes distancias puede llegar a los milisegundos.
 
@@ -253,7 +254,7 @@ que en el modelo de capas de Internet fueron fusionados: la capa de Presentació
 	- El navegador genera un mensaje HTTP (capa de Aplicación). Y se lo pasa a la capa inferior.
 	- La capa de Transporte toma este mensaje, lo encapsula y le añade una cabecera propia para transformarlo en un segmento.
 	  Luego lo pasa a la capa inferior.
-	- La capa de Red, toma este segmento, lo vuelve a encapsular y le añade una cabecera propia, transformandolo en un
+	- La capa de Red, toma este segmento, lo vuelve a encapsular y le añade una cabecera propia, transformándolo en un
 	  datagrama.
 	- La capa de Enlace toma nuevamente este datagrama y le añade su propia cabecera para convertirlo en una trama que será
 	  transmitida por la última capa (La capa Física).
@@ -263,7 +264,7 @@ Todo este flujo se denomina *encapsulamiento*. Cuando la trama llega al destino,
 (realizando el proceso inverso antes descripto) donde cada capa mira el encabezado que le corresponde, y lo pasa a la capa
 superior.
 
-Se debe tener en cuenta que para que dos host que se encuentran *conectados en el mismo enlace* se comuniquen, deberan utilizar
+Se debe tener en cuenta que para que dos host que se encuentran *conectados en el mismo enlace* se comuniquen, deberán utilizar
 *LOS MISMOS* protocolos para sus mensajes.
 Pero lo normal es que los host NO se encuentren comunicados en el mismo enlace, es decir, en la misma red, por lo que habrán
 elementos intermedios que ayudarán a hacer llegar ese mensaje. Un Ejemplo puede ser, un host que se quiera comunicar con un

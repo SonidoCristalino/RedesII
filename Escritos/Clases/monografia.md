@@ -96,8 +96,5 @@ provide the SDP (description) for that stream name. But, this is of course speci
 implemented. For "live" streams, it's probably simpler to just use RTP, but you'll need a way to transfer the SDP from the RTP
 server to the client that wants to play that stream.
 
-
-
-
 # Conversación con Nico:
 

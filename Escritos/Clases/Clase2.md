@@ -137,7 +137,7 @@ Una vez que lo tiene todo, el navegador lo muestra al usuario.
 
 La web se basa por tanto en el protocolo http que sigue un modelo cliente-servidor. Donde el cliente es el navegador y el servidor
 es el servidor web (como por ejemplo Apache). El protocolo que se utiliza es el *TCP* por lo que el cliente antes de realizar la
-trnasferencia de datos, debe establecer una conexión TCP, creando el socket con el servidor web, que tiene su socket esperando en
+transferencia de datos, debe establecer una conexión TCP, creando el socket con el servidor web, que tiene su socket esperando en
 el puerto 80. Acepta la conexión, y una vez establecida la conexión se intercambian los mensajes http y finalmente se cierra la
 conexión.
 Http es un protocolo sin memoria, por lo que el servidor no mantiene un historial de las peticiones realizadas del mismo cliente.

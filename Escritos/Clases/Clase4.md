@@ -73,9 +73,9 @@ los mensajes de ese protocolo DNS.
 Tendremos dos tipos de mensaje: para hacer las consultas y para responderlas; pero ambos con el mismo formato. Tienen una cabecera
 con un número de identificación de 16 bits y una serie de indicadores que dirán si
 	- Se trata de una consulta de una respuesta
-	- Si se desea emplear repercursión o
+	- Si se desea emplear recursión o
 	- Si se soporta esa recursión
-	- Si se trata de un dns autoritativo
+	- Si se trata de un DNS autoritativo
 
 Después vienen cuatro campos que nos van a indicar
 	- El número de consultas
@@ -307,11 +307,10 @@ fragmentos, y así ese vecino a lo mejor puede entrar en el top 4.
 
 # ¿Cómo funciona?
 Esto se denomina un "Optimstically unchoke". ¿Cómo funciona? Imaginaos que Alicia no está filtrando de esta forma optimista como
-decíamos a Bob, entonces Alicia se convierte en uno de los primeros top 4 proveedores de Bob, le está dando le está dando
-fragmentos y Bob la selecciona como uno de los cuatro más rápidas, entonces bob empieza en ese momento a enviarle datos también a
-Alicia. Si la velocidad de voz es bastante buena también podría entrar en el top 4 de Alicia y por lo tanto establecer una
-comunicación fluida. La consecuencia de esto es que los pies que suministran datos a velocidades similares tienden a emparejarse en
-Bittorrent.
+decíamos a Bob, entonces Alicia se convierte en uno de los primeros top 4 proveedores de Bob, le está dando fragmentos y Bob la
+selecciona como uno de los cuatro más rápidas, entonces bob empieza en ese momento a enviarle datos también a Alicia. Si la
+velocidad de voz es bastante buena también podría entrar en el top 4 de Alicia y por lo tanto establecer una comunicación fluida.
+La consecuencia de esto es que los pies que suministran datos a velocidades similares tienden a emparejarse en Bittorrent.
 
 Como se dijo antes, Bittorrent no utiliza un tracker centralizado sino que utiliza lo que denominamos tablas hash distribuidas, es
 decir, que son bases de datos por decirlo de alguna manera, que van a contener pares clave-valor, en nuestro caso van a contener
